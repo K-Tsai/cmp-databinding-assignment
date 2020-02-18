@@ -17,6 +17,10 @@ export class GameControlComponent implements OnInit {
     }, 1000);
   }
 
+  stopGame() {
+    clearInterval(this.interval);
+  }
+
   constructor() { }
 
   ngOnInit(): void {
